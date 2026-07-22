@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>Geese Hunt</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="game">
+    <div id="title-screen" class="screen">
+      <h1>Geese Hunt</h1>
+      <div id="best-score-title">Best: 0</div>
+      <button id="start-btn">Start</button>
+    </div>
+    <div id="hud" class="hidden">
+      <span id="timer">30</span>
+      <span id="score">Score: 0</span>
+      <span id="level">Level 1</span>
+    </div>
+    <canvas id="canvas"></canvas>
+    <div id="end-screen" class="screen hidden">
+      <h2 id="end-text"></h2>
+      <div id="best-score-end"></div>
+      <button id="again-btn">Play Again</button>
+      <button id="next-btn">Next Level</button>
+    </div>
+  </div>
+<script src="game.js"></script>
+</body>
+</html>
